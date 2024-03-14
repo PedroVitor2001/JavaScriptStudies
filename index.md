@@ -35,14 +35,14 @@ const total =  numbers.reduce((prev, next) => prev + next);
 ### ***Objeto Pessoa***:
 ```
 const pessoa = {
-    nome: 'Pedro',
+    nome: 'Sasa',
     irNaAcademia: function (){
         this.nome // funciona
     }
 }
 
 const pessoa = {
-    nome: 'Pedro',
+    nome: 'Sasa',
     irNaAcademia: () => {
         this.nome // não funciona: this é indefinido
     }
