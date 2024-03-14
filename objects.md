@@ -11,7 +11,7 @@ const person1 = {
     age: 30,
     isEmployed: true,
     sayHello: function(){return "Hi, Im Spongebob"},
-    eat: function(){return "Im eating a Krabby Patty"},
+    eat: function(){return "Im eating a Krabby Patty"}
 
 }
 
@@ -22,7 +22,7 @@ const person2 = {
     age: 42,
     isEmployed: false,
     sayHello: () => {return "Hi, Im Patrick"},
-    eat: () => {return "Im eating Krabby Patty"} ,
+    eat: () => {return "Im eating Krabby Patty"} 
 
 }
 
@@ -51,5 +51,24 @@ console.log(person1.isEmployed);
 console.log(person1.eat());
 console.log(person1.sayHello());
 
+```
+
+## ***.this***:
+> referência ao objeto onde .this é usado (person.name = this.name)
+
+> Não pode ser usado com Arrow function
+
+```
+const person1 = {
+
+    firstName: "Spongebob",
+    lastName: "Squarepants",
+    age: 30,
+    isEmployed: true,
+    sayHello: function(){
+        console.log(`Hi, im ${this.firstName}`)
+    }
+}
+person1.sayHello();
 ```
 
