@@ -1,4 +1,4 @@
-# Objects
+# Objetos
 > Uma coleção de propriedades e/ou métodos relacionados que podem representar objetos do mundo real (pessoas, produtos, lugares...)
 
 ## ***Exemplo***:
