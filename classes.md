@@ -55,3 +55,40 @@ product1.displayProduct();                          //Saida: Product: Celular  P
 const total = product1.calculateTotal(salesTax);
 console.log(`Total Price with Tax: $${total}`);     //Saída: Total Price with Tax: $1050
 ```
+
+## ***Static***
+> keyword que define propriedades ou métodos de uma classe que pertencem a classe em si,
+sem a necessidade de instanciar um objeto.
+
+```
+class MathUtil{
+    static PI =  3.14159;
+
+    static getDiameter(radius){
+        return radius * 2;
+    }
+
+    static getCircumference(radius){
+        return 2 * this.PI * radius;
+    }
+}
+
+console.log(MathUtil.PI)
+console.log(MathUtil.getDiameter(10));
+console.log(MathUtil.getCircumference(5))
+
+class User{
+    
+    static userCount = 0;
+
+    constructor(username){
+        this.username = username;
+        User.userCount++;
+    }
+}
+
+const user1 = new User("Pedro");
+const user2 =  new User("Sasa");
+console.log(user1.username);
+console.log(User.userCount);
+```
